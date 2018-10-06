@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Charmonman|Lato|Nanum+Gothic|PT+Sans+Caption" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="todolist.css">
+    <link rel="stylesheet" href="translator.css">
+    <link rel="stylesheet" href="musicplayer.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+
+           
+            <div id="aside">
+            
+                <img src="images/james.jpg" alt="">
+                <h2 id="myname">James Sterling</h2>
+                <h3 class ="myname">Web developer & Music producer</h3>
+                <h3 class ="myname">www.jamessterlingportfolio.com</h3>
+                <h3 class ="myname">jamessterling1980@gmail.com</h3>
+
+            </div>
+
+        
+            <div id="section1">
+
+                <h2 id="aboutme">About Me</h2>
+
+                <img src="images/jamesfull.jpg" alt="">
+
+                <p>My name is James Sterling. Have you ever asked yourself, did i choose the right path for a fructuous career?
+                    I had. I have almost burried myself by choosing the wrong path until i was convainced that web development 
+                    was the right path for my successful career.It took me 4 years to study economic science but therefore i do not
+                    remember a thing of what i have learned in economic science.To shortend my aboutme, i wanted to create a website
+                    but did not want to embed people's code, this was my challenge for one year and half, and going to sleep late every single day.
+                    I have never found myself so passionate about something like coding. I did not choose to go to school for it, why?
+                    because i could not afford it, but thanks to the web, and my time, and my books.I can not say that i am at the top of
+                    my real career but i can tell that i am in the right direction. <a id="readmore" href="#">Read more...</a><br>
+                    <span  id="readMore"> If you are fighting with your sleep after spending 7 hour plus in coding, despite the challenge of stucking through some code
+                    and determine to find the solution on your own, and always trying to learn new things. I could never be happier for choosing 
+                    the web development path for my lifetime career.
+                    
+                    I can consider my knowlegde of HTML at 70%, my CSS at 60%, and my JAVASCRIPT knowledge at 50%.Javascript is my favorite, 
+                    despite all the frameworks, and librairies out there, i keep challenging myself to know javascript naked.
+                    if you are looking for a motivated web developer, who has the passion for making the web more interacive, James is the one.
+                    
+                    i know you can't wait to check out my amazing works in the web development, if so check out the <span style="color:red">'My projects'</span> down below to see the amazing
+                    things that i achieved in a short period of time of my learning journey.
+                    
+                    Do not hesitate to give me feedback about why i could not fill that empty space in your web development business so I 
+                    can improve myself to your satisfaction.<a href="#"  id="readless">Read less...</a>
+                    </span>
+                </p>
+
+            </div>
+
+        
+        <div id="section2">
+            
+                    <h2 id="mywork" >My projects</h2>
+                   
+            <!---------- TODO LIST PROJECT ------>                
+                 <div id="todos">
+                        <h2 id="todoTitle">My Todo-list</h2>
+
+                        <input id="inputtext" type="text" placeholder="Enter your todo here">
+                        <button id="addtodos">Add Todos</button>
+                        <div id="alltodos">
+                            <ul id="my-ul">
+                                <li><i class="fa fa-trash"></i>Learning HTML first</li> 
+                                <li><i class="fa fa-trash"></i>Secondly learn cascading stylesheet</li>
+                                <li><i class="fa fa-trash"></i></i>Make it interactive with javascript</li>
+                                <li><i class="fa fa-trash"></i>Get to know React</li>
+                            </ul>
+                        </div>
+
+                 </div> 
+
+                 
+                 <div id="box">
+                        <h2 id="transtitle">My little translator</h2>
+                        <h3> <span style="color:blue">English</span> to <span style="color:red">Creole</span> </h3>
+                        <input type="text" id="textInput"   placeholder="What do you want to translate?">
+                        <button id="translate" >Translate</button>
+                        <button id="clear" >Clear</button>
+                        <div id="translationBox">
+                            <h2 id='translation'></h2>
+                            <img id="playbtn" src="images/play1.png" alt="">
+                            <p id="howtosay"><span style="color:red">Click the play button</span> to hear and say it in creole.</p>
+                        </div>
+                 </div>
+                      
+         </div>
+
+
+        
+                <div id="Mcontainer">
+                      <div id="posters">
+                          <img src="images/audiopc.jpg" alt="" id="poster">
+                      </div>
+
+                      <div id="title">
+                          <h3  id="songtitle">Song title</h3>
+                         <span class="audiotime" id="currenttime">00:00</span> / <span class="audiotime" id="duration">00:00</span>
+                      </div>
+
+                      <div id="player">
+                          <div id="buttons">
+                                <i id="prev" class="audiobtn fa fa-backward" aria-hidden="true"></i>
+                                <i id="play" class="audiobtn fa fa-play-circle-o" aria-hidden="true"></i>
+                                <i id="pause" class="audiobtn fa fa-pause-circle-o" aria-hidden="true"></i>
+                                <i id="stop" class="audiobtn fa fa-stop-circle-o" aria-hidden="true"></i>
+                                <i id="next" class="audiobtn fa fa-forward" aria-hidden="true"></i>
+                          </div>
+
+                          <!-- <div id="progress">
+                              <div id="progressBar"></div>
+                          </div> -->
+
+                            <audio id="MyAudio" src="" controls></audio>
+                          
+                      </div>
+
+                      <div id="playlistContainer">
+                          <select  id="playlist" size="3">
+                              <option value="Time To Say Goodbye">Time To Say Goodbye.mp3</option>
+                              <option value="Perfect">Perfect.mp3</option>
+                              <option value="Vivo per lei">Vivo per lei.mp3</option>
+                          </select>
+                      </div>
+
+                    </div>
+         
+
+
+                <div id="section3">
+            
+                    <h2 id="contactme"> Contact me</h2>
+                       
+                    
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                         when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                         It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                         It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                         and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+
+    
+        </div>
+
+        <div id="headnav">
+                <nav id="navigationbar">
+                    <ul id="headnavbar">
+                        <li><a href="#">Home</a> </li>
+                        <li><a href="#">About me</a></li>
+                        <li><a href="#">My Projects</a></li>
+                        <li><a href="#">Contact me</a></li>
+                    </ul>
+                </nav>
+
+                <h2 id="time"></h2>
+
+                <nav id="mysocial">
+                       <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                       <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                       <i class="fa fa-github" aria-hidden="true"></i>
+                       <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+
+                </nav>
+            </div>
+
+    
+
+
+    <script src="portfolio.js"></script>
+    <script src="todolist.js"></script>
+    <script src="translator.js"></script>
+    <script src="musicplayer.js"></script>
+</body>
+</html>
